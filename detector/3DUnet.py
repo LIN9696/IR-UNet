@@ -19,9 +19,9 @@ class UNet3D(nn.Module):
         self.pool1 = nn.MaxPool3d(2)
         self.pool2 = nn.MaxPool3d(2)
 
-        #self.dc9 = self.decoder(512, 512, kernel_size=2, stride=2, bias=False)
-        #self.dc8 = self.decoder(256 + 512, 256, kernel_size=3, stride=1, padding=1, bias=False)
-        #self.dc7 = self.decoder(256, 256, kernel_size=3, stride=1, padding=1, bias=False)
+        self.dc9 = self.decoder(512, 512, kernel_size=2, stride=2, bias=False)
+        self.dc8 = self.decoder(256 + 512, 256, kernel_size=3, stride=1, padding=1, bias=False)
+        self.dc7 = self.decoder(256, 256, kernel_size=3, stride=1, padding=1, bias=False)
         self.dc6 = self.decoder(256, 256, kernel_size=2, stride=2, bias=False)
         self.dc5 = self.decoder(128 + 256, 128, kernel_size=3, stride=1, padding=1, bias=False)
         self.dc4 = self.decoder(128, 128, kernel_size=3, stride=1, padding=1, bias=False)

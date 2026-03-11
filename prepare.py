@@ -9,8 +9,8 @@ from config_training import config
 # config = config_training.config
 from scipy.io import loadmat
 import numpy as np
-import matplotlib.pyplot as plt
-import h5py
+#import matplotlib.pyplot as plt
+#import h5py
 import pandas
 import scipy
 from scipy.ndimage.interpolation import zoom
