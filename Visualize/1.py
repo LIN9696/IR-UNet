@@ -15,8 +15,7 @@
 #
 #
 	
-# this is third try
-# this is third try of two 
+	
 	
 import SimpleITK as sitk
 import matplotlib.pyplot as plt
